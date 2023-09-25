@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Office';
+}
+
+.color {
+    color: var(--button);
+}
+
+:root {
+    --maincolor: red;
+    --button: #F49D1A;
+}
+
+
+p {
+    font-size: 22px;
+    color: #7aa17f;
+    margin: 0;
+}
+
+.p-100 {
+    padding: 100px 0;
+}
+
+.px-100 {
+    padding: 0 100px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+img {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+img:hover {
+    /* filter: blur(1px); */
+    transition: all 0.3s ease-in-out;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: var(--button);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.butn {
+    border: none;
+    padding: 10px 25px;
+    background: var(--button);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+}
+
+.butn:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.befour {
+    position: relative;
+    z-index: 1;
+}
+
+.befour::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #212a3ea6;
+    z-index: -1;
+}
+
+/* navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease-in-out;
+    z-index: 99;
+}
+
+/* /navbar */
+
+/* section start Home   */
+
+.main {
+    background: url("./img/img1.jpg") no-repeat center/cover;
+    height: 900px;
+    width: 100%;
+}
+
+/* section end  */
+
+/* about start */
+
+
+
+/* about end */
+
+.SERVICES {
+    background: url("./img/bg.jpg") no-repeat center/cover;
+    height: auto;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+/* section start */
+.Projects {
+    background-color: #212A3E;
+}
+
+.project {
+    cursor: pointer;
+    height: 200px;
+    background-color: #394867;
+    color: white;
+}
+
+.project p {
+    display: none;
+}
+
+.project img {
+    opacity: 0;
+    border-radius: 8px;
+    height: 300px;
+    width: 100%;
+}
+
+.project:hover {
+    color: black;
+    background-color: white;
+}
+
+.project:hover img {
+    opacity: 1;
+    transition: all 0.8s;
+    animation: rotate 0.3s;
+}
+
+.project:hover p {
+    display: block;
+    transition: all 0.8s;
+}
+
+.project:hover h3 {
+    display: none;
+    transition: all 0.8s;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    10% {
+        transform: rotateZ(-5deg);
+    }
+
+    20% {
+        transform: rotateZ(0deg);
+    }
+
+    30% {
+        transform: rotateZ(5deg);
+    }
+
+    40% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-5deg);
+    }
+
+    60% {
+        transform: rotateZ(0deg);
+    }
+
+    70% {
+        transform: rotateZ(5deg);
+    }
+
+    80% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(-5deg);
+    }
+}
+
+/* section nned   */
+
+.Appointment {
+    background: url("./img/silder.jpg") no-repeat center/cover;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+
+.Appointment img {
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    transform: translate(-40%, -47%);
+}
+
+/* form */
+textarea:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+    color: var(--button);
+}
+
+input:focus {
+    outline: none;
+}
+
+.form {
+    background: url("./img/white.jpg") no-repeat center/cover;
+    width: 100%;
+    height: auto;
+}
+
+/* section end  */
+.social {
+    cursor: pointer;
+}
+
+/* footer :end  */
+
+
+
+/* electric page start  */
+.electric {
+    background: url("./img/01.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* section one end  */
+
+.grids img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* ac page start  */
+
+.Ac_service {
+    background: url("./img/ac3.jpg") no-repeat top/cover;
+    width: 100%;
+    height: 400px;
+}
+
+/* camera start */
+.Camera {
+    background: url("./img/camera3.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* light start */
+
+.Light {
+    background: url("./img/lighting.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+/* wiring start */
+
+.wiring {
+    background: url("./img/ele.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+/* labour start */
+
+.labour {
+    background: url("./img/labour.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* carpainter */
+
+.carpainter {
+    background: url("./img/carpainterbg.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* interior */
+.interior {
+    background: url("./img/int.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+/* car service */
+.car {
+    background: url("./img/car5.jpg") no-repeat bottom/cover;
+    width: 100%;
+    height: 400px;
+}
+
+/* about page */
+
+.choose h2 {
+    font-family: 'Raleway';
+    font-size: 50px;
+}
+
+.choose {
+    background: url("./img/login.jpg") no-repeat center/cover fixed;
+    width: 100%;
+}
+
+.choose_body {
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.choose_body:hover {
+    background-color: var(--button);
+    transition: all 0.3s;
+    color: white;
+}
+
+/* about end */
+
+
+/* blog start */
+
+.blog_front {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.blog_front::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #212a3ea6;
+    z-index: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.blog_min:hover .blog_front::before {
+    left: 0%;
+}
+
+.blog_body {
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    transform: translate(10px, 0px);
+    background-color: white;
+    width: max-content;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.blog_min:hover .blog_body {
+    right: 0;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.blog_min:hover .blog_body {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+/* blog end */
+
+/* blog grid */
+
+.blog_grid {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 95%;
+}
+
+.tags p {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tags p:hover {
+    background-color: var(--button);
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* Login page */
+section.login_page {
+    height: 100vh;
+    overflow-y: auto;
+    background: url('./img/login.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login_card {
+    background-color: #8d8d8d6e;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    border-radius: 10px;
+    /* padding: 55px; */
+}
+
+.login_card h2 {
+    color: white;
+    font-weight: bold;
+}
+
+/* \ Login page */
+
+
+
+
+
+/* media quary  */
+
+@media (max-width:1024px) {
+    .project p {
+        display: block;
+        color: white;
+        width: 100%;
+    }
+
+    .project {
+        height: auto;
+    }
+
+    .project:hover {
+        color: white;
+        background-color: #36395a;
+
+    }
+
+    .project:hover h3 {
+        display: block;
+    }
+
+}
+
+@media (max-width:768px) {
+    .project {
+        height: auto;
+        padding: 10px;
+    }
+
+    .blog_grid {
+        position: relative;
+        width: 100%;
+    }
+}
