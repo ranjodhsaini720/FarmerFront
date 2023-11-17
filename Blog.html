@@ -1,315 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon" />
     <!-- bootstrap Css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- bootstrp Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
     <!-- font-awesome -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- font family -->
 
     <!-- style CSS  -->
-    <link rel="stylesheet" href="./farmer.css">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./farmer.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg w-100" id="addclass">
-        <div class="container-fluid">
-            <a class="navbar-brand fs-2 fw-bold text-white" href="#"><img src="./img/fav.png" alt="mg"
-                    style="width: 50px; height: 50px;"><span class="ps-2">Labour</span></a>
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2 fw-bold text-white" href="#"
+          ><img
+            src="./img/fav.png"
+            alt="mg"
+            style="width: 50px; height: 50px"
+          /><span class="ps-2">TECH_LI</span></a
+        >
 
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fs-5" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fs-5" href="./About.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fs-5" href="./Blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fs-5" href="./Contact.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <a href="Login.html" class="butn me-2" type=""><i
-                            class="fa-solid fa-arrow-right-to-bracket fa-beat-fade me-1"></i> Login</a>
-                    <a href="Signup.html" class="butn me-2" type=""><i
-                            class="fa-solid fa-arrow-right-to-bracket fa-beat-fade me-1"></i> Sign Up</a>
-                </form>
-            </div>
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white fs-5"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-5" href="./About.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-5" href="./Blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-5" href="./Contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <a href="Login.html" class="butn me-2" type=""
+              ><i
+                class="fa-solid fa-arrow-right-to-bracket fa-beat-fade me-1"
+              ></i>
+              Login</a
+            >
+            <a href="Signup.html" class="butn me-2" type=""
+              ><i
+                class="fa-solid fa-arrow-right-to-bracket fa-beat-fade me-1"
+              ></i>
+              Sign Up</a
+            >
+          </form>
         </div>
+      </div>
     </nav>
     <!-- nav end  -->
-    <section class="main befour d-flex align-items-center justify-content-center text-center">
-        <div class="container">
-            <h3 class="display-4 text-white fw-bold">Blog</h3>
-            <p class="text-white">Productive work, esp physical toil done for wages</p>
+    <section
+      class="main befour d-flex align-items-center justify-content-center text-center"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-10 col-12">
+            <h1
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              class="main_heading text-white fw-bold"
+            >
+              BLOG
+            </h1>
+            <p data-aos="fade-down" data-aos-duration="1000" class="text-white">
+              Productive work, esp physical toil done for wages. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Sapiente, nihil
+              dolorem sit impedit nemo repellendus.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- section end  -->
 
     <section class="Blog p-100">
-        <div class="container">
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-6 col-md-6">
-                   <a href="./BlogGrid.html" class="text-decoration-none text-dark">
-                    <div class="blog_min border rounded-3 overflow-hidden">
-                        <div class="blog_front">
-                            <img src="./img/blog.jpg" alt="mg" class=" w-100">
-                            <div class="blog_body d-flex align-content-center p-4">
-                                <h4 class="color"><b>March 29,2023</b></h4>
-                                <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
-                            </div>
-                        </div>
-                        <div class="p-4 ">
-                            <h3 class="fs-2 fw-medium">Bring together our visitor’s Societies and Spirits</h3>
-                            <p>Our objective at homelane is to bring together our visitor’s societies and spirits with
-                                our
-                                own, communicating enthusiasm and liberality in the food we share. ...</p>
-                            <button class="butn my-3">CONTINUE REDING</button>
-                        </div>
-                    </div>
-                   </a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                   <a href="./BlogGrid.html" class="text-decoration-none text-dark">
-                    <div class="blog_min border rounded-3 overflow-hidden">
-                        <div class="blog_front">
-                            <img src="./img/blog1.jpg" alt="mg" class=" w-100">
-                            <div class="blog_body d-flex align-content-center p-4">
-                                <h4 class="color"><b>March 29,2023</b></h4>
-                                <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
-                            </div>
-                        </div>
-                        <div class="p-4 ">
-                            <h3 class="fs-2 fw-medium">Evolved from generation that has on normal</h3>
-                            <p>Our objective at homelane is to bring together our visitor’s societies and spirits with
-                                our
-                                own, communicating enthusiasm and liberality in the food we share. ...</p>
-                            <button class="butn my-3">CONTINUE REDING</button>
-                        </div>
-                    </div>
-                   </a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                   <a href="./BlogGrid.html" class="text-decoration-none text-dark">
-                    <div class="blog_min border rounded-3 overflow-hidden">
-                        <div class="blog_front">
-                            <img src="./img/blog2.jpg" alt="mg" class=" w-100">
-                            <div class="blog_body d-flex align-content-center p-4">
-                                <h4 class="color"><b>March 29,2023</b></h4>
-                                <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
-                            </div>
-                        </div>
-                        <div class="p-4 ">
-                            <h3 class="fs-2 fw-medium">Bring together our visitor’s Societies and Spirits</h3>
-                            <p>Our objective at homelane is to bring together our visitor’s societies and spirits with
-                                our
-                                own, communicating enthusiasm and liberality in the food we share. ...</p>
-                            <button class="butn my-3">CONTINUE REDING</button>
-                        </div>
-                    </div>
-                   </a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <a href="./BlogGrid.html" class="text-decoration-none text-dark">
-                    <div class="blog_min border rounded-3 overflow-hidden">
-                        <div class="blog_front">
-                            <img src="./img/blog3.jpg" alt="mg" class=" w-100">
-                            <div class="blog_body d-flex align-content-center p-4">
-                                <h4 class="color"><b>March 29,2023</b></h4>
-                                <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
-                            </div>
-                        </div>
-                        <div class="p-4 ">
-                            <h3 class="fs-2 fw-medium">Bring together our visitor’s Societies and Spirits</h3>
-                            <p>Our objective at homelane is to bring together our visitor’s societies and spirits with
-                                our
-                                own, communicating enthusiasm and liberality in the food we share. ...</p>
-                            <button class="butn my-3">CONTINUE REDING</button>
-                        </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <a href="./BlogGrid.html" class="text-decoration-none text-dark">
-                    <div class="blog_min border rounded-3 overflow-hidden">
-                        <div class="blog_front">
-                            <img src="./img/blog4.jpg" alt="mg" class=" w-100">
-                            <div class="blog_body d-flex align-content-center p-4">
-                                <h4 class="color"><b>March 29,2023</b></h4>
-                                <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
-                            </div>
-                        </div>
-                        <div class="p-4 ">
-                            <h3 class="fs-2 fw-medium">Bring together our visitor’s Societies and Spirits</h3>
-                            <p>Our objective at homelane is to bring together our visitor’s societies and spirits with
-                                our
-                                own, communicating enthusiasm and liberality in the food we share. ...</p>
-                            <button class="butn my-3">CONTINUE REDING</button>
-                        </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                   <a href="./BlogGrid.html" class="text-decoration-none text-dark">
-                    <div class="blog_min border rounded-3 overflow-hidden">
-                        <div class="blog_front">
-                            <img src="./img/blog5.jpg" alt="mg" class=" w-100">
-                            <div class="blog_body d-flex align-content-center p-4">
-                                <h4 class="color"><b>March 29,2023</b></h4>
-                                <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
-                            </div>
-                        </div>
-                        <div class="p-4 ">
-                            <h3 class="fs-2 fw-medium">Bring together our visitor’s Societies and Spirits</h3>
-                            <p>Our objective at homelane is to bring together our visitor’s societies and spirits with
-                                our
-                                own, communicating enthusiasm and liberality in the food we share. ...</p>
-                            <button class="butn my-3">CONTINUE REDING</button>
-                        </div>
-                    </div>
-                   </a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <a href="./BlogGrid.html" class="text-decoration-none text-dark">
-                    <div class="blog_min border rounded-3 overflow-hidden">
-                        <div class="blog_front">
-                            <img src="./img/blog6.jpg" alt="mg" class=" w-100">
-                            <div class="blog_body d-flex align-content-center p-4">
-                                <h4 class="color"><b>March 29,2023</b></h4>
-                                <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
-                            </div>
-                        </div>
-                        <div class="p-4 ">
-                            <h3 class="fs-2 fw-medium">Bring together our visitor’s Societies and Spirits</h3>
-                            <p>Our objective at homelane is to bring together our visitor’s societies and spirits with
-                                our
-                                own, communicating enthusiasm and liberality in the food we share. ...</p>
-                            <button class="butn my-3">CONTINUE REDING</button>
-                        </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                   <a href="./BlogGrid.html" class="text-decoration-none text-dark">
-                    <div class="blog_min border rounded-3 overflow-hidden">
-                        <div class="blog_front">
-                            <img src="./img/blog7.jpg" alt="mg" class=" w-100">
-                            <div class="blog_body d-flex align-content-center p-4">
-                                <h4 class="color"><b>March 29,2023</b></h4>
-                                <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
-                            </div>
-                        </div>
-                        <div class="p-4 ">
-                            <h3 class="fs-2 fw-medium">Bring together our visitor’s Societies and Spirits</h3>
-                            <p>Our objective at homelane is to bring together our visitor’s societies and spirits with
-                                our
-                                own, communicating enthusiasm and liberality in the food we share. ...</p>
-                            <button class="butn my-3">CONTINUE REDING</button>
-                        </div>
-                    </div>
-                   </a>
-                </div>
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-12">
+            <h3
+              data-aos="flip-down"
+              data-aos-duration="1300"
+              class="display-5 text-center fw-bold pb-5"
+            >
+              Get In Touch With Us
+            </h3>
+          </div>
 
-            </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="col-lg-6 col-md-6"
+          >
+            <a href="./BlogGrid.html" class="text-decoration-none text-dark">
+              <div class="blog_min border rounded-3 overflow-hidden">
+                <div class="blog_front">
+                  <img src="./img/blog.jpg" alt="mg" class="w-100" />
+                  <div class="blog_body d-flex align-content-center p-4">
+                    <h4 class="color"><b>March 29,2023</b></h4>
+                    <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="fs-2 fw-medium">
+                    Bring together our visitor’s Societies and Spirits
+                  </h3>
+                  <p>
+                    Our objective at homelane is to bring together our visitor’s
+                    societies and spirits with our own, communicating enthusiasm
+                    and liberality in the food we share. ...
+                  </p>
+                  <button class="butn my-3">CONTINUE REDING</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="col-lg-6 col-md-6"
+          >
+            <a href="./BlogGrid.html" class="text-decoration-none text-dark">
+              <div class="blog_min border rounded-3 overflow-hidden">
+                <div class="blog_front">
+                  <img src="./img/blog1.jpg" alt="mg" class="w-100" />
+                  <div class="blog_body d-flex align-content-center p-4">
+                    <h4 class="color"><b>March 29,2023</b></h4>
+                    <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="fs-2 fw-medium">
+                    Evolved from generation that has on normal
+                  </h3>
+                  <p>
+                    Our objective at homelane is to bring together our visitor’s
+                    societies and spirits with our own, communicating enthusiasm
+                    and liberality in the food we share. ...
+                  </p>
+                  <button class="butn my-3">CONTINUE REDING</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="col-lg-6 col-md-6"
+          >
+            <a href="./BlogGrid.html" class="text-decoration-none text-dark">
+              <div class="blog_min border rounded-3 overflow-hidden">
+                <div class="blog_front">
+                  <img src="./img/blog2.jpg" alt="mg" class="w-100" />
+                  <div class="blog_body d-flex align-content-center p-4">
+                    <h4 class="color"><b>March 29,2023</b></h4>
+                    <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="fs-2 fw-medium">
+                    Bring together our visitor’s Societies and Spirits
+                  </h3>
+                  <p>
+                    Our objective at homelane is to bring together our visitor’s
+                    societies and spirits with our own, communicating enthusiasm
+                    and liberality in the food we share. ...
+                  </p>
+                  <button class="butn my-3">CONTINUE REDING</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="col-lg-6 col-md-6"
+          >
+            <a href="./BlogGrid.html" class="text-decoration-none text-dark">
+              <div class="blog_min border rounded-3 overflow-hidden">
+                <div class="blog_front">
+                  <img src="./img/blog3.jpg" alt="mg" class="w-100" />
+                  <div class="blog_body d-flex align-content-center p-4">
+                    <h4 class="color"><b>March 29,2023</b></h4>
+                    <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="fs-2 fw-medium">
+                    Bring together our visitor’s Societies and Spirits
+                  </h3>
+                  <p>
+                    Our objective at homelane is to bring together our visitor’s
+                    societies and spirits with our own, communicating enthusiasm
+                    and liberality in the food we share. ...
+                  </p>
+                  <button class="butn my-3">CONTINUE REDING</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="col-lg-6 col-md-6"
+          >
+            <a href="./BlogGrid.html" class="text-decoration-none text-dark">
+              <div class="blog_min border rounded-3 overflow-hidden">
+                <div class="blog_front">
+                  <img src="./img/blog4.jpg" alt="mg" class="w-100" />
+                  <div class="blog_body d-flex align-content-center p-4">
+                    <h4 class="color"><b>March 29,2023</b></h4>
+                    <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="fs-2 fw-medium">
+                    Bring together our visitor’s Societies and Spirits
+                  </h3>
+                  <p>
+                    Our objective at homelane is to bring together our visitor’s
+                    societies and spirits with our own, communicating enthusiasm
+                    and liberality in the food we share. ...
+                  </p>
+                  <button class="butn my-3">CONTINUE REDING</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="col-lg-6 col-md-6"
+          >
+            <a href="./BlogGrid.html" class="text-decoration-none text-dark">
+              <div class="blog_min border rounded-3 overflow-hidden">
+                <div class="blog_front">
+                  <img src="./img/blog5.jpg" alt="mg" class="w-100" />
+                  <div class="blog_body d-flex align-content-center p-4">
+                    <h4 class="color"><b>March 29,2023</b></h4>
+                    <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="fs-2 fw-medium">
+                    Bring together our visitor’s Societies and Spirits
+                  </h3>
+                  <p>
+                    Our objective at homelane is to bring together our visitor’s
+                    societies and spirits with our own, communicating enthusiasm
+                    and liberality in the food we share. ...
+                  </p>
+                  <button class="butn my-3">CONTINUE REDING</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="col-lg-6 col-md-6"
+          >
+            <a href="./BlogGrid.html" class="text-decoration-none text-dark">
+              <div class="blog_min border rounded-3 overflow-hidden">
+                <div class="blog_front">
+                  <img src="./img/blog6.jpg" alt="mg" class="w-100" />
+                  <div class="blog_body d-flex align-content-center p-4">
+                    <h4 class="color"><b>March 29,2023</b></h4>
+                    <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="fs-2 fw-medium">
+                    Bring together our visitor’s Societies and Spirits
+                  </h3>
+                  <p>
+                    Our objective at homelane is to bring together our visitor’s
+                    societies and spirits with our own, communicating enthusiasm
+                    and liberality in the food we share. ...
+                  </p>
+                  <button class="butn my-3">CONTINUE REDING</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="col-lg-6 col-md-6"
+          >
+            <a href="./BlogGrid.html" class="text-decoration-none text-dark">
+              <div class="blog_min border rounded-3 overflow-hidden">
+                <div class="blog_front">
+                  <img src="./img/blog7.jpg" alt="mg" class="w-100" />
+                  <div class="blog_body d-flex align-content-center p-4">
+                    <h4 class="color"><b>March 29,2023</b></h4>
+                    <p class="ps-3 ms-auto">By : Admin / 0 Comments</p>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="fs-2 fw-medium">
+                    Bring together our visitor’s Societies and Spirits
+                  </h3>
+                  <p>
+                    Our objective at homelane is to bring together our visitor’s
+                    societies and spirits with our own, communicating enthusiasm
+                    and liberality in the food we share. ...
+                  </p>
+                  <button class="butn my-3">CONTINUE REDING</button>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- footer start  -->
 
     <section class="bg-light p-100 text-center text-lg-start">
-        <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="logo-part">
-                                <h3>Labour</h3>
-                                <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
-                                <p>Use this tool as test data for an automated system or find your next pen</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <h3> About Company</h3>
-                            <p>But horizontal lines can only be a full pixel high.</p>
-                        </div>
-                    </div>
+              <div class="col-md-6">
+                <div class="logo-part">
+                  <h3>TECH_LI</h3>
+                  <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                  <p>
+                    Use this tool as test data for an automated system or find
+                    your next pen
+                  </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="row g-3 justify-content-center">
-                        <div class="col-md-6">
-                            <h3> Help us</h3>
-                            <div class="row ">
-                                <div class="col-md-6">
-                                    <ul class="list-unstyled">
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Home</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> About</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Service</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Team</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Help</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Contact</a> </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="list-unstyled">
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Cab Faciliy</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Fax</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Terms</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Policy</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Refunds</a> </li>
-                                        <li> <a href="#" class="text-dark text-decoration-none"> Paypal</a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <h3> Newsletter</h3>
-                            <div class="social">
-                                <div>
-                                    <i class="fa-brands fa-facebook text-muted fs-5 me-2"></i>
-                                    <i class="fa-brands fa-instagram text-muted fs-5 me-2"></i>
-                                    <i class="fa-brands fa-twitter text-muted fs-5 me-2"></i>
-                                    <i class="fa-brands fa-google text-muted fs-5 me-2"></i>
-                                </div>
-                            </div>
-                            <form class="form-footer my-3">
-                                <input type="text" placeholder="Search Here...." class="py-2 ps-3 border rounded"
-                                    name="search">
-                                <input type="button" class="butn" value="Go">
-                            </form>
-                            <p>That's technology limitation of LCD monitors</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="col-md-6">
+                <h3>About Company</h3>
+                <p>But horizontal lines can only be a full pixel high.</p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-6">
+                <h3>Help us</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Home</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          About</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Service</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Team</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Help</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Cab Faciliy</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Fax</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Terms</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Policy</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Refunds</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-dark text-decoration-none">
+                          Paypal</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3>Newsletter</h3>
+                <div class="social">
+                  <div>
+                    <i class="fa-brands fa-facebook text-muted fs-5 me-2"></i>
+                    <i class="fa-brands fa-instagram text-muted fs-5 me-2"></i>
+                    <i class="fa-brands fa-twitter text-muted fs-5 me-2"></i>
+                    <i class="fa-brands fa-google text-muted fs-5 me-2"></i>
+                  </div>
+                </div>
+                <form class="form-footer my-3">
+                  <input
+                    type="text"
+                    placeholder="Search Here...."
+                    class="py-2 ps-3 border rounded"
+                    name="search"
+                  />
+                  <input type="button" class="butn" value="Go" />
+                </form>
+                <p>That's technology limitation of LCD monitors</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-</body>
+    <script>
+      AOS.init();
+    </script>
 
+    <script src="./script.js"></script>
+    <!-- bootstrp Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
